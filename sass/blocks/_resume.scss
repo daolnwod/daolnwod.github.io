@@ -1,0 +1,98 @@
+.resume {
+    position: relative;
+    min-height: 700px;
+    background-color: $background-color;
+    padding-top: 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle_resume;
+        z-index: 3;
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__divider {
+        height: 2px;
+        width: 100px;
+        background-color: $main-color;
+        margin: 25px auto;
+        box-shadow: 0px 0px 10px rgba(167, 35, 255, 1);
+    }
+    &__wrapper {
+        padding-top: 60px;
+        padding-left: 65px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 135px;
+    }
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 45px;
+            &:before {
+                content: '';
+                position: absolute;
+                height: 15px;
+                width: 15px;
+                background: $main-color;
+                border-radius: 100%;
+                left: -7px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &:after {
+                    content: '';
+                    width: 1px;
+                    height: calc(100% + 16px);
+                    position: absolute;
+                    top: -15px;
+                    left: 0;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &:before {
+            content: '';
+            height: 1px;
+            width: 45px;
+            position: absolute;
+            background-color: #fff;
+            top: 66px;
+        }
+        &-head {
+            position: relative;
+            padding: 45px 0 0 100px;
+            @include before_circle_resume2;
+            z-index: 3;
+            h4 {
+                margin-bottom: 5px;
+            }
+        }
+    }
+    &__item-location {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 300;
+    }
+    &__item-body {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 15px 0 0 45px;
+    }
+    &__icon-item {
+        position: absolute;
+        width: 24px;
+        top: 60px;
+        left: 60px;
+    }
+}

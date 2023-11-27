@@ -1,0 +1,37 @@
+.sidepanel {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 340px;
+    z-index: 3;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    &__divider {
+        height: 70px;
+        width: 2px;
+        background-color: #fff;
+        margin: 15px auto;
+    }
+    &__link {
+        i {
+            transform: rotate(-90deg);
+            color: #fff;
+            font-size: 30px;
+            transition: 0.8s all;
+            &:hover {
+                rotate: (450deg);
+                box-shadow: 0px 0px 50px rgba(255, 255, 255, 1);
+            }
+        }
+    }
+    &__text {
+        transform: rotate(-90deg);
+        color: #fff;
+        font-size: 16px;
+        margin-top: 60px;
+        font-weight: 600;
+    }
+}

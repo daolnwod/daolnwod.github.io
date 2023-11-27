@@ -1,0 +1,72 @@
+@mixin before_circle {
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: $main-color;
+        top: -35%;
+        left: -2px;
+    }
+}
+
+@mixin before_circle_block {
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: $main-color;
+        top: 15px;
+        left: -53px;
+    }
+}
+
+@mixin before_circle_resume {
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: $main-color;
+        top: -7px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@mixin before_circle_resume2 {
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: $main-color;
+        top: 48px;
+        left: 62px;
+        transform: translateX(-50%);
+    }
+}
+
+@mixin before_circle_prices {
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        background: $main-color;
+        top: 3px;
+        left: -18px;
+        transform: translateX(-50%);
+    }
+}
